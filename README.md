@@ -8,4 +8,4 @@
 ## Как запустить
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-ник/meme-universe.git
+   https://github.com/TurboSosiska304/Meme_universe.git
