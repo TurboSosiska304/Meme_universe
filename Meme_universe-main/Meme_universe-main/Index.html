@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Universe | Планета мемов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Рикролл кнопка -->
+    <div class="rickroll" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')">
+        🎵
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">🤪 MEME UNIVERSE</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Главная</a>
+                <a href="#upload" class="nav-link">Загрузить</a>
+                <a href="#profile" class="nav-link">Профиль</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Главная страница -->
+    <main class="container" id="home">
+        <div class="meme-grid">
+            <!-- Пример мема -->
+            <article class="meme-card">
+                <img src="assets/memes/grumpy-cat.png" alt="Грустный кот" class="meme-image">
+                <div class="meme-info">
+                    <h2 class="meme-title">Грустный кот</h2>
+                    <p>Когда понедельник, а ты кот</p>
+                    <div class="meme-tags">
+                        <span class="tag">#коты</span>
+                        <span class="tag">#реакции</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Форма загрузки -->
+    <section class="container" id="upload">
+        <form class="upload-form" id="upload-form">
+            <h2>📤 Загрузить мем</h2>
+            <div class="form-group">
+                <label>Название мема</label>
+                <input type="text" id="meme-title" required>
+            </div>
+            <div class="form-group">
+                <label>Описание</label>
+                <textarea id="meme-description" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Теги (через запятую)</label>
+                <input type="text" id="meme-tags" placeholder="#коты, #смешно">
+            </div>
+            <div class="form-group">
+                <label>Загрузить изображение</label>
+                <input type="file" id="meme-image" accept="image/*" required>
+            </div>
+            <button type="submit">Опубликовать мем! 🚀</button>
+        </form>
+    </section>
+
+    <!-- Профиль -->
+    <section class="container" id="profile">
+        <div class="profile">
+            <img src="assets/avatars/avatar.png" alt="Аватар" class="avatar">
+            <h2>Иван Мемов</h2>
+            <p>🔼 1285 карма мемов</p>
+            <div class="meme-tags" style="justify-content: center; margin-top: 1rem;">
+                <span class="tag">#мемолог</span>
+                <span class="tag">#гуру</span>
+            </div>
+            
+            <h3 style="margin-top: 2rem;">Мои мемы</h3>
+            <div class="meme-grid" style="margin-top: 1rem;">
+                <article class="meme-card">
+                    <img src="assets/memes/nan-cat.png" alt="Мой мем" class="meme-image">
+                    <div class="meme-info">
+                        <h2 class="meme-title">Мой первый мем</h2>
+                        <div class="meme-tags">
+                            <span class="tag">#новичок</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Meme Universe. Все мемы защищены смехом 😂</p>
+        <p>Сделано с ❤️, 🍕 и 🎵 Never Gonna Give You Up</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+              </html>
